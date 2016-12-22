@@ -1,2 +1,3 @@
-github "Quick/Quick" "v1.0.0"
-github "Quick/Nimble" ~> 5.0.0
+github "typelift/Swiftx"
+github "typelift/SwiftCheck"
+github "typelift/Operadics"
