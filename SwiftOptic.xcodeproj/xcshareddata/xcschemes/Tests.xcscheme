@@ -16,7 +16,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2696F7191E0BB6DB0060CA38"
+               BlueprintIdentifier = "2696F7401E0BCA9A0060CA38"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:SwiftOptic.xcodeproj">

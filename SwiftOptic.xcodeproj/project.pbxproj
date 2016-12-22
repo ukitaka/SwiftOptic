@@ -10,8 +10,36 @@
 		268E0E151E0BB55200679A41 /* SwiftOptic.h in Headers */ = {isa = PBXBuildFile; fileRef = 268E0E131E0BB55200679A41 /* SwiftOptic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2696F7261E0BB6F70060CA38 /* Iso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F7251E0BB6F70060CA38 /* Iso.swift */; };
 		2696F73A1E0BC82F0060CA38 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F7391E0BC82F0060CA38 /* Operators.swift */; };
-		2696F73C1E0BC8500060CA38 /* Swiftx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696F73B1E0BC8500060CA38 /* Swiftx.framework */; };
+		2696F7461E0BCA9A0060CA38 /* SwiftOptic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E0E101E0BB55200679A41 /* SwiftOptic.framework */; };
+		26EB06C31E0BD0A400BC9A4B /* SwiftCheck.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26EB06C11E0BD0A400BC9A4B /* SwiftCheck.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26EB06C41E0BD0A400BC9A4B /* Swiftx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26EB06C51E0BD0B200BC9A4B /* Swiftx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */; };
+		26EB06C71E0BD13600BC9A4B /* IsoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2696F7471E0BCA9A0060CA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268E0E071E0BB55200679A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268E0E0F1E0BB55200679A41;
+			remoteInfo = SwiftOptic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26EB06C01E0BD07B00BC9A4B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				26EB06C31E0BD0A400BC9A4B /* SwiftCheck.framework in CopyFiles */,
+				26EB06C41E0BD0A400BC9A4B /* Swiftx.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		268E0E101E0BB55200679A41 /* SwiftOptic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOptic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,7 +49,11 @@
 		2696F72A1E0BB9890060CA38 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		2696F72B1E0BB9890060CA38 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		2696F7391E0BC82F0060CA38 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Carthage/Checkouts/Operadics/Operators.swift; sourceTree = SOURCE_ROOT; };
-		2696F73B1E0BC8500060CA38 /* Swiftx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftx.framework; path = Carthage/Build/iOS/Swiftx.framework; sourceTree = "<group>"; };
+		2696F7411E0BCA9A0060CA38 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2696F7451E0BCA9A0060CA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EB06C11E0BD0A400BC9A4B /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/iOS/SwiftCheck.framework; sourceTree = "<group>"; };
+		26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftx.framework; path = Carthage/Build/iOS/Swiftx.framework; sourceTree = "<group>"; };
+		26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsoSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +61,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2696F73C1E0BC8500060CA38 /* Swiftx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2696F73E1E0BCA9A0060CA38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EB06C51E0BD0B200BC9A4B /* Swiftx.framework in Frameworks */,
+				2696F7461E0BCA9A0060CA38 /* SwiftOptic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				268E0E121E0BB55200679A41 /* SwiftOptic */,
+				2696F7421E0BCA9A0060CA38 /* Tests */,
 				268E0E111E0BB55200679A41 /* Products */,
 				2696F7291E0BB9890060CA38 /* Frameworks */,
 			);
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				268E0E101E0BB55200679A41 /* SwiftOptic.framework */,
+				2696F7411E0BCA9A0060CA38 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,11 +109,21 @@
 		2696F7291E0BB9890060CA38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2696F73B1E0BC8500060CA38 /* Swiftx.framework */,
+				26EB06C11E0BD0A400BC9A4B /* SwiftCheck.framework */,
+				26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */,
 				2696F72A1E0BB9890060CA38 /* Nimble.framework */,
 				2696F72B1E0BB9890060CA38 /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2696F7421E0BCA9A0060CA38 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2696F7451E0BCA9A0060CA38 /* Info.plist */,
+				26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +159,24 @@
 			productReference = 268E0E101E0BB55200679A41 /* SwiftOptic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		2696F7401E0BCA9A0060CA38 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2696F7491E0BCA9A0060CA38 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2696F73D1E0BCA9A0060CA38 /* Sources */,
+				2696F73E1E0BCA9A0060CA38 /* Frameworks */,
+				26EB06C01E0BD07B00BC9A4B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2696F7481E0BCA9A0060CA38 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 2696F7411E0BCA9A0060CA38 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +188,12 @@
 				ORGANIZATIONNAME = waft;
 				TargetAttributes = {
 					268E0E0F1E0BB55200679A41 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = G73SPYZ3Q7;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					2696F7401E0BCA9A0060CA38 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = G73SPYZ3Q7;
 						LastSwiftMigration = 0820;
@@ -138,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				268E0E0F1E0BB55200679A41 /* SwiftOptic */,
+				2696F7401E0BCA9A0060CA38 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,7 +255,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2696F73D1E0BCA9A0060CA38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EB06C71E0BD13600BC9A4B /* IsoSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2696F7481E0BCA9A0060CA38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268E0E0F1E0BB55200679A41 /* SwiftOptic */;
+			targetProxy = 2696F7471E0BCA9A0060CA38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		268E0E161E0BB55200679A41 /* Debug */ = {
@@ -329,6 +422,41 @@
 			};
 			name = Release;
 		};
+		2696F74A1E0BCA9A0060CA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G73SPYZ3Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.waft.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2696F74B1E0BCA9A0060CA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G73SPYZ3Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.waft.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -346,6 +474,15 @@
 			buildConfigurations = (
 				268E0E191E0BB55200679A41 /* Debug */,
 				268E0E1A1E0BB55200679A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2696F7491E0BCA9A0060CA38 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2696F74A1E0BCA9A0060CA38 /* Debug */,
+				2696F74B1E0BCA9A0060CA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
