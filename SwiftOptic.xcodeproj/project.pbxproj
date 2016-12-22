@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		268E0E151E0BB55200679A41 /* SwiftOptic.h in Headers */ = {isa = PBXBuildFile; fileRef = 268E0E131E0BB55200679A41 /* SwiftOptic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2696F7261E0BB6F70060CA38 /* Iso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F7251E0BB6F70060CA38 /* Iso.swift */; };
+		2696F73A1E0BC82F0060CA38 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F7391E0BC82F0060CA38 /* Operators.swift */; };
+		2696F73C1E0BC8500060CA38 /* Swiftx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696F73B1E0BC8500060CA38 /* Swiftx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		2696F7251E0BB6F70060CA38 /* Iso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iso.swift; sourceTree = "<group>"; };
 		2696F72A1E0BB9890060CA38 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		2696F72B1E0BB9890060CA38 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		2696F7391E0BC82F0060CA38 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Carthage/Checkouts/Operadics/Operators.swift; sourceTree = SOURCE_ROOT; };
+		2696F73B1E0BC8500060CA38 /* Swiftx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftx.framework; path = Carthage/Build/iOS/Swiftx.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2696F73C1E0BC8500060CA38 /* Swiftx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,7 @@
 		268E0E121E0BB55200679A41 /* SwiftOptic */ = {
 			isa = PBXGroup;
 			children = (
+				2696F7391E0BC82F0060CA38 /* Operators.swift */,
 				268E0E131E0BB55200679A41 /* SwiftOptic.h */,
 				268E0E141E0BB55200679A41 /* Info.plist */,
 				2696F7251E0BB6F70060CA38 /* Iso.swift */,
@@ -61,6 +67,7 @@
 		2696F7291E0BB9890060CA38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2696F73B1E0BC8500060CA38 /* Swiftx.framework */,
 				2696F72A1E0BB9890060CA38 /* Nimble.framework */,
 				2696F72B1E0BB9890060CA38 /* Quick.framework */,
 			);
@@ -89,6 +96,7 @@
 				268E0E0C1E0BB55200679A41 /* Frameworks */,
 				268E0E0D1E0BB55200679A41 /* Headers */,
 				268E0E0E1E0BB55200679A41 /* Resources */,
+				2696F7381E0BC7280060CA38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,12 +152,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2696F7381E0BC7280060CA38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		268E0E0B1E0BB55200679A41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2696F7261E0BB6F70060CA38 /* Iso.swift in Sources */,
+				2696F73A1E0BC82F0060CA38 /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +290,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftOptic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -286,6 +315,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftOptic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

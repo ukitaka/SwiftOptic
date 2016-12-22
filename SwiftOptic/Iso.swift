@@ -6,7 +6,7 @@
 //  Copyright © 2016年 waft. All rights reserved.
 //
 
-import Foundation
+import Swiftx
 
 public struct Iso<S, A> {
     public let get: (S) -> A
@@ -20,22 +20,20 @@ public struct Iso<S, A> {
 
 public extension Iso {
     public func modify(_ m: @escaping (A) -> A) -> ((S) -> S) {
-        get 
-//        return { s in
-//            return self.reverseGet(m(self.get(s)))
-//        }
+        return reverseGet • m • get
     }
 
     public var reverse: Iso<A, S> {
         return Iso<A, S>(
-            get: self.reverseGet,
-            reverseGet: self.get
+            get: reverseGet,
+            reverseGet: get
         )
     }
-}
 
-public func compose<A, B, C>(f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C {
-    return { a in
-        return g(f(a))
+    public func compose<B>(other: Iso<A, B>) -> Iso<S, B> {
+        return Iso<S, B>(
+            get: other.get • get,
+            reverseGet: reverseGet • other.reverseGet
+        )
     }
 }
