@@ -36,4 +36,11 @@ public extension Iso {
             reverseGet: reverseGet • other.reverseGet
         )
     }
+
+    public func compose<B>(other: Prism<A, B>) -> Prism<S, B> {
+        return Prism<S, B>(
+            getOption: other.getOption • get,
+            reverseGet: reverseGet • other.reverseGet
+        )
+    }
 }

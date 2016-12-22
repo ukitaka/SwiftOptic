@@ -35,6 +35,15 @@ public extension Prism {
         }
     }
 
+    public func compose<B>(other: Iso<A, B>) -> Prism<S, B> {
+        return Prism<S, B>(
+            getOption: { s in
+                self.getOption(s).map(other.get)
+            },
+            reverseGet: reverseGet • other.reverseGet
+        )
+    }
+
     public func compose<B>(other: Prism<A, B>) -> Prism<S, B> {
         return Prism<S, B>(
             getOption: getOption >>->> other.getOption,
