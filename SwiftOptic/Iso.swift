@@ -2,7 +2,7 @@
 //  Iso.swift
 //  SwiftOptic
 //
-//  Created by ST20841 on 2016/12/22.
+//  Created by ukitaka on 2016/12/22.
 //  Copyright © 2016年 waft. All rights reserved.
 //
 
