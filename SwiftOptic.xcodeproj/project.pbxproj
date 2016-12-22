@@ -15,6 +15,8 @@
 		26EB06C41E0BD0A400BC9A4B /* Swiftx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26EB06C51E0BD0B200BC9A4B /* Swiftx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */; };
 		26EB06C71E0BD13600BC9A4B /* IsoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */; };
+		E8E308B21E0C215400A0C182 /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E308B11E0C215400A0C182 /* Prism.swift */; };
+		E8E308B41E0C27FD00A0C182 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E308B31E0C27FD00A0C182 /* Optional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		26EB06C11E0BD0A400BC9A4B /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/iOS/SwiftCheck.framework; sourceTree = "<group>"; };
 		26EB06C21E0BD0A400BC9A4B /* Swiftx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftx.framework; path = Carthage/Build/iOS/Swiftx.framework; sourceTree = "<group>"; };
 		26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsoSpec.swift; sourceTree = "<group>"; };
+		E8E308B11E0C215400A0C182 /* Prism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prism.swift; sourceTree = "<group>"; };
+		E8E308B31E0C27FD00A0C182 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				268E0E131E0BB55200679A41 /* SwiftOptic.h */,
 				268E0E141E0BB55200679A41 /* Info.plist */,
 				2696F7251E0BB6F70060CA38 /* Iso.swift */,
+				E8E308B11E0C215400A0C182 /* Prism.swift */,
+				E8E308B31E0C27FD00A0C182 /* Optional.swift */,
 			);
 			path = SwiftOptic;
 			sourceTree = "<group>";
@@ -250,8 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E308B21E0C215400A0C182 /* Prism.swift in Sources */,
 				2696F7261E0BB6F70060CA38 /* Iso.swift in Sources */,
 				2696F73A1E0BC82F0060CA38 /* Operators.swift in Sources */,
+				E8E308B41E0C27FD00A0C182 /* Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
