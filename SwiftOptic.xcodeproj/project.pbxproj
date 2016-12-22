@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		268E0E151E0BB55200679A41 /* SwiftOptic.h in Headers */ = {isa = PBXBuildFile; fileRef = 268E0E131E0BB55200679A41 /* SwiftOptic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2696F71F1E0BB6DB0060CA38 /* SwiftOptic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E0E101E0BB55200679A41 /* SwiftOptic.framework */; };
 		2696F7261E0BB6F70060CA38 /* Iso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F7251E0BB6F70060CA38 /* Iso.swift */; };
-		2696F72C1E0BB9890060CA38 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696F72A1E0BB9890060CA38 /* Nimble.framework */; };
-		2696F72D1E0BB9890060CA38 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696F72B1E0BB9890060CA38 /* Quick.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2696F7201E0BB6DB0060CA38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 268E0E071E0BB55200679A41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 268E0E0F1E0BB55200679A41;
-			remoteInfo = SwiftOptic;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		268E0E101E0BB55200679A41 /* SwiftOptic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOptic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		268E0E131E0BB55200679A41 /* SwiftOptic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOptic.h; sourceTree = "<group>"; };
 		268E0E141E0BB55200679A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2696F71A1E0BB6DB0060CA38 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2696F71E1E0BB6DB0060CA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2696F7251E0BB6F70060CA38 /* Iso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iso.swift; sourceTree = "<group>"; };
 		2696F72A1E0BB9890060CA38 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		2696F72B1E0BB9890060CA38 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -43,16 +28,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2696F7171E0BB6DB0060CA38 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2696F72C1E0BB9890060CA38 /* Nimble.framework in Frameworks */,
-				2696F72D1E0BB9890060CA38 /* Quick.framework in Frameworks */,
-				2696F71F1E0BB6DB0060CA38 /* SwiftOptic.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,7 +35,6 @@
 			isa = PBXGroup;
 			children = (
 				268E0E121E0BB55200679A41 /* SwiftOptic */,
-				2696F71B1E0BB6DB0060CA38 /* Tests */,
 				268E0E111E0BB55200679A41 /* Products */,
 				2696F7291E0BB9890060CA38 /* Frameworks */,
 			);
@@ -70,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				268E0E101E0BB55200679A41 /* SwiftOptic.framework */,
-				2696F71A1E0BB6DB0060CA38 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,14 +56,6 @@
 				2696F7251E0BB6F70060CA38 /* Iso.swift */,
 			);
 			path = SwiftOptic;
-			sourceTree = "<group>";
-		};
-		2696F71B1E0BB6DB0060CA38 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				2696F71E1E0BB6DB0060CA38 /* Info.plist */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		2696F7291E0BB9890060CA38 /* Frameworks */ = {
@@ -134,25 +99,6 @@
 			productReference = 268E0E101E0BB55200679A41 /* SwiftOptic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2696F7191E0BB6DB0060CA38 /* Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2696F7241E0BB6DB0060CA38 /* Build configuration list for PBXNativeTarget "Tests" */;
-			buildPhases = (
-				2696F7161E0BB6DB0060CA38 /* Sources */,
-				2696F7171E0BB6DB0060CA38 /* Frameworks */,
-				2696F7181E0BB6DB0060CA38 /* Resources */,
-				2696F7281E0BB9750060CA38 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2696F7211E0BB6DB0060CA38 /* PBXTargetDependency */,
-			);
-			name = Tests;
-			productName = Tests;
-			productReference = 2696F71A1E0BB6DB0060CA38 /* Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,12 +110,6 @@
 				ORGANIZATIONNAME = waft;
 				TargetAttributes = {
 					268E0E0F1E0BB55200679A41 = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = G73SPYZ3Q7;
-						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
-					};
-					2696F7191E0BB6DB0060CA38 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = G73SPYZ3Q7;
 						LastSwiftMigration = 0820;
@@ -190,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				268E0E0F1E0BB55200679A41 /* SwiftOptic */,
-				2696F7191E0BB6DB0060CA38 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,30 +142,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2696F7181E0BB6DB0060CA38 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2696F7281E0BB9750060CA38 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		268E0E0B1E0BB55200679A41 /* Sources */ = {
@@ -237,22 +153,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2696F7161E0BB6DB0060CA38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2696F7211E0BB6DB0060CA38 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 268E0E0F1E0BB55200679A41 /* SwiftOptic */;
-			targetProxy = 2696F7201E0BB6DB0060CA38 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		268E0E161E0BB55200679A41 /* Debug */ = {
@@ -395,43 +296,6 @@
 			};
 			name = Release;
 		};
-		2696F7221E0BB6DB0060CA38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = G73SPYZ3Q7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.waft.Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		2696F7231E0BB6DB0060CA38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = G73SPYZ3Q7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.waft.Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -452,14 +316,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		2696F7241E0BB6DB0060CA38 /* Build configuration list for PBXNativeTarget "Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2696F7221E0BB6DB0060CA38 /* Debug */,
-				2696F7231E0BB6DB0060CA38 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
