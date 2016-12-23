@@ -1,3 +1,4 @@
 github "typelift/Swiftx"
 github "typelift/SwiftCheck"
 github "typelift/Operadics"
+github "thoughtbot/Curry"
