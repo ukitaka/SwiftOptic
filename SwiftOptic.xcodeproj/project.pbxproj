@@ -17,6 +17,7 @@
 		26EB06C71E0BD13600BC9A4B /* IsoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */; };
 		E8E308B21E0C215400A0C182 /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E308B11E0C215400A0C182 /* Prism.swift */; };
 		E8E308B41E0C27FD00A0C182 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E308B31E0C27FD00A0C182 /* Optional.swift */; };
+		E8E308B61E0C31C400A0C182 /* PrismSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E308B51E0C31C400A0C182 /* PrismSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsoSpec.swift; sourceTree = "<group>"; };
 		E8E308B11E0C215400A0C182 /* Prism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prism.swift; sourceTree = "<group>"; };
 		E8E308B31E0C27FD00A0C182 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		E8E308B51E0C31C400A0C182 /* PrismSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrismSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				2696F7451E0BCA9A0060CA38 /* Info.plist */,
 				26EB06C61E0BD13600BC9A4B /* IsoSpec.swift */,
+				E8E308B51E0C31C400A0C182 /* PrismSpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E308B61E0C31C400A0C182 /* PrismSpec.swift in Sources */,
 				26EB06C71E0BD13600BC9A4B /* IsoSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
